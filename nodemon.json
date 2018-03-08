@@ -1,0 +1,7 @@
+{
+    "watch": "server",
+    "ext": "js,jsx,graphql,sql",
+    "exec": "./node_modules/.bin/babel-node server",
+    "ignore": [],
+    "delay": "2000"
+}

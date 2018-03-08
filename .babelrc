@@ -1,0 +1,27 @@
+{
+    "passPerPreset": true,
+    "presets": [
+        "env",
+        "stage-0",
+        "react"
+    ],
+    "plugins": [
+        [
+            "inline-import",
+            {
+                "extensions": [
+                    ".json",
+                    ".graphql",
+                    ".sql"
+                ]
+            }
+        ],
+        "styled-components",
+    ],
+    "env": {
+        "targets": {
+            "node": "current"
+        }
+    },
+    "retainLines": true
+}

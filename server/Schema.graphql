@@ -1,0 +1,16 @@
+type Skill {
+    id: ID!
+    name: String!
+    desc: String
+    rating: Int
+} 
+
+type Info {
+    name: String!
+    phone: String
+}
+
+type Query {
+    skills: [Skill]
+    contactInfo: Info
+}
