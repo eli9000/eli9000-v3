@@ -1,16 +1,17 @@
 type Skill {
-    id: ID!
+    id: ID
     name: String!
     desc: String
     rating: Int
-} 
+}
 
 type Info {
-    name: String!
-    phone: String
+    id: ID
+    type: String!
+    info: String
 }
 
 type Query {
     skills: [Skill]
-    contactInfo: Info
+    contact: [Info]
 }

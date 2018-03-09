@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import schema from './schema.js';
 import { blue, yellow } from 'chalk';
-import db from './db';
+import db from './db/postgres';
 
 const app = express();
 
