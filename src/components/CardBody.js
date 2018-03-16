@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const CardBody = styled.div`
   font-size: 1em;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.3;
   width: 100%;
   display: flex;
   flex-wrap: wrap;

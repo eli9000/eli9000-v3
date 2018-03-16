@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'react-apollo';
+import gql from 'graphql-tag';
 import PropTypes from 'prop-types';
 
 import Container from '../../components/Container';
@@ -7,7 +8,16 @@ import Card from '../../components/Card';
 import CardTitle from '../../components/CardTitle';
 import CardBody from '../../components/CardBody';
 
-import { query, options } from './query';
+const query = gql`
+  query skills {
+    skills {
+      id
+      name
+      rating
+      desc
+    }
+  }
+`;
 
 const Development = ({ data: { loading, error, skills } }) => {
   if (loading) {
@@ -21,7 +31,7 @@ const Development = ({ data: { loading, error, skills } }) => {
   return (
     <Container>
       {skills.map((skill) => (
-        <Card key={skill.id}>
+        <Card key={skill.id} padding="20px">
           <CardTitle>{skill.name}</CardTitle>
           <CardBody>{skill.desc}</CardBody>
         </Card>
@@ -34,4 +44,4 @@ Development.propTypes = {
   data: PropTypes.any.isRequired,
 };
 
-export default graphql(query, options)(Development);
+export default graphql(query)(Development);

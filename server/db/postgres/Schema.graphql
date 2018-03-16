@@ -9,6 +9,7 @@ type Info {
     id: ID
     type: String!
     info: String
+    link: String
 }
 
 type Query {

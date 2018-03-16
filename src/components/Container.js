@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  flex-basis: 90%;
-  flex-flow: row wrap;
+  flex-basis: 100%;
+  flex-flow: wrap;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 `;
 
 export default Container;

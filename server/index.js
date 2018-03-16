@@ -3,9 +3,12 @@ import path from 'path';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
-import schema from './schema.js';
 import { blue, yellow } from 'chalk';
-import db from './db/postgres';
+
+import db from './db';
+import schema from './db/postgres/handler.js';
+
+// import twitter from './api/twitter';
 
 const app = express();
 

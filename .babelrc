@@ -1,27 +1,19 @@
 {
-    "passPerPreset": true,
-    "presets": [
-        "env",
-        "stage-0",
-        "react"
+  "passPerPreset": true,
+  "presets": ["env", "stage-0", "react"],
+  "plugins": [
+    [
+      "inline-import",
+      {
+        "extensions": [".json", ".graphql", ".sql"]
+      }
     ],
-    "plugins": [
-        [
-            "inline-import",
-            {
-                "extensions": [
-                    ".json",
-                    ".graphql",
-                    ".sql"
-                ]
-            }
-        ],
-        "styled-components",
-    ],
-    "env": {
-        "targets": {
-            "node": "current"
-        }
-    },
-    "retainLines": true
+    "styled-components"
+  ],
+  "env": {
+    "targets": {
+      "node": "current"
+    }
+  },
+  "retainLines": true
 }

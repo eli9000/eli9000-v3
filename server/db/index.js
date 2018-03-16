@@ -3,7 +3,6 @@ import { magenta, red, cyan } from 'chalk';
 
 const {
     NODE_ENV,
-    API_PORT = 4000,
     USERNAME,
     PW,
     DB_HOST,
@@ -13,10 +12,10 @@ const {
 
 const client = new Client({
     user: USERNAME,
-    host: DB_HOST,
-    database: DATABASE,
     password: PW,
+    host: DB_HOST,
     port: DB_PORT,
+    database: DATABASE,
 });
 
 client.connect()
