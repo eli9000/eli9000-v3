@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 /* ***************************************************************** */
 
-const HomeWrapper = styled.div.attrs({
-  className: 'Home',
+const ContactWrapper = styled.div.attrs({
+  className: 'Contact',
 })`
   dislpay: flex;
   flex: 1 100%;
@@ -16,12 +16,12 @@ const HomeWrapper = styled.div.attrs({
   }
 `;
 
-const Home = () => {
+const Contact = () => {
   return (
-    <HomeWrapper>
-      <h1>Homey Home Evening!</h1>
-    </HomeWrapper>
+    <ContactWrapper>
+      <h1>Contact A Ninja</h1>
+    </ContactWrapper>
   );
 };
 
-export default Home;
+export default Contact;

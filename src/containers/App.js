@@ -1,22 +1,32 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
-// import { injectGlobal } from 'styled-components';
-// CSS imports
-import '../styles/App.css';
-
-// Container imports
 import Header from './Header';
-// import Icon from './components/Icon';
+import NavBar from './NavBar';
+// import Home from './Home';
+
+/* ***************************************************************** */
+
+const AppWrapper = styled.div.attrs({
+  className: 'App',
+})`
+  dislpay: flex;
+  flex: 1 100%;
+  height: 100vh;
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <AppWrapper>
         <Header />
         {this.props.children}
-      </div>
+        <NavBar />
+      </AppWrapper>
     );
   }
 }
 
 export default App;
+
+/* ***************************************************************** */

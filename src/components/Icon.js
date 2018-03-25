@@ -1,12 +1,11 @@
-import React from 'react';  // eslint-disable-line
+import React from 'react'; // eslint-disable-line
 import styled from 'styled-components';
 
 const Icon = styled.i.attrs({
-  className: props => props.className
+  className: props => props.className,
 })`
   color: ${props => props.color};
-  height: 100%;
-  width: auto;
+  align-self: center;
 `;
 
 export default Icon;

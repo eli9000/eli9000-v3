@@ -5,63 +5,56 @@ import Icon from './Icon';
 import Rating from './Rating';
 
 const Wrapper = styled.div`
-  height: 100px;
+  height: auto;
   width: 90%;
   display: flex;
   flex-flow: row nowrap;
+  padding: 10px;
+  /* prettier-ignore */
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+              0 1px 18px 0 rgba(0, 0, 0, 0.12),
+              0 3px 5px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
 `;
 
 const IconBox = styled.div.attrs({
   className: 'fa-4x',
 })`
-  flex: 0 0 10%;
+  align-self: center;
 `;
 
 const Section = styled.section`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  padding-left: 10px;
 `;
 
 const Title = styled.h1`
   align-self: center;
+  width: 120px;
+  margin: 0;
 `;
 
-const SkillCard = () => {
-  const data = [
-    {
-      category: 'front-end',
-      type: 'framework',
-      name: 'react',
-      rating: 4,
-      color: 'blue',
-      fa: 'fab fa-react',
-      desc: 'I have been doing React for a minute.',
-    },
-    {
-      category: 'back-end',
-      type: 'framework',
-      name: 'node js',
-      color: 'red',
-      rating: 3,
-      fa: 'fab fa-node-js',
-      desc: 'I have been doing Node for a minute.',
-    },
-  ];
+const Body = styled.p`
+  align-self: center;
+  margin-left: 10px;
+`;
+
+const SkillCard = ({ name, fa, color, rating = 0, desc }) => {
 
   return (
-    <div className="SkillCard">
-      {data.map(skill => (
-        <Wrapper key={skill.name}>
-          <IconBox>
-            <Icon className={skill.fa} color={skill.color} />
-          </IconBox>
-          <Section>
-            <Title>{skill.name}</Title>
-            <Rating rating={skill.rating} />
-          </Section>
-        </Wrapper>
-      ))}
-    </div>
+    <Wrapper>
+      <IconBox>
+        <Icon className={fa} color={color} />
+      </IconBox>
+      <Section>
+        <Title>{name}</Title>
+        <Rating rating={rating} />
+      </Section>
+      <Body>{desc}</Body>
+    </Wrapper>
   );
 };
 

@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 /* ***************************************************************** */
 
-const HomeWrapper = styled.div.attrs({
-  className: 'Home',
+const AboutWrapper = styled.div.attrs({
+  className: 'About',
 })`
   dislpay: flex;
   flex: 1 100%;
@@ -16,12 +16,12 @@ const HomeWrapper = styled.div.attrs({
   }
 `;
 
-const Home = () => {
+const About = () => {
   return (
-    <HomeWrapper>
-      <h1>Homey Home Evening!</h1>
-    </HomeWrapper>
+    <AboutWrapper>
+      <h1>About Me</h1>
+    </AboutWrapper>
   );
 };
 
-export default Home;
+export default About;

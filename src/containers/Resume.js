@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 /* ***************************************************************** */
 
-const HomeWrapper = styled.div.attrs({
-  className: 'Home',
+const ResumeWrapper = styled.div.attrs({
+  className: 'Resume',
 })`
   dislpay: flex;
   flex: 1 100%;
@@ -16,12 +16,12 @@ const HomeWrapper = styled.div.attrs({
   }
 `;
 
-const Home = () => {
+const Resume = () => {
   return (
-    <HomeWrapper>
-      <h1>Homey Home Evening!</h1>
-    </HomeWrapper>
+    <ResumeWrapper>
+      <h1>Resume Pageeee</h1>
+    </ResumeWrapper>
   );
 };
 
-export default Home;
+export default Resume;

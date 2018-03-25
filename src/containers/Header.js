@@ -1,19 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import Icon from '../components/Icon';
 
-const Wrapper = styled.div`
+const HeaderWrapper = styled.div.attrs({
+  className: 'Header',
+})`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  border-bottom: 1px solid black;
+  margin: 0 10px;
+  height: 10vh;
 `;
 
 export default () => {
   return (
-    <Wrapper>
+    <HeaderWrapper>
+      <Link to="/">eli9000</Link>
       <Icon className="fab fa-facebook" color={'blue'} />
-    </Wrapper>
+    </HeaderWrapper>
   );
 };

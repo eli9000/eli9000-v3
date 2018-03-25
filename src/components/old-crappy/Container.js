@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-basis: 100%;
-  flex-flow: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 `;
