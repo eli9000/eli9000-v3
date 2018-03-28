@@ -14,8 +14,8 @@ const Rating = ({ rating = 0 }) => {
         .map((r, i) => (
           <i
             key={`${i}-${r}`}
-            className="fas fa-star"
-            style={{ color: 'yellow' }}
+            className="fas fa-star fa-lg"
+            style={{ color: 'gold', marginRight: '4px' }}
           />
         ))}
     </Wrapper>

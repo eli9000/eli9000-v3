@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import styled from 'styled-components';
 
 import Header from './Header';
@@ -16,6 +17,25 @@ const AppWrapper = styled.div.attrs({
 `;
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      loading: true,
+      results: {},
+    };
+  }
+
+  componentDidMount() {
+    axios({
+      method: 'get',
+      baseURL: 'https://s3.amazonaws.com/e9k-static/skills/skills.json',
+      // url: '/code-skills',
+    }).then(response => {
+      console.log(response);
+      this.setState({ results: { ...response.data }, loading: false });
+    });
+  }
+
   render() {
     return (
       <AppWrapper>

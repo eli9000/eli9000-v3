@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "configurations": [
+    {
+      "label": "Scratchpad: Node",
+      "command": "${workspaceFolder}/node_modules/.bin/nodemon",
+      "args": ["--exec", "babel-node", "--delay", "1", "${file}", "8080"],
+      "group": "build"
+    }
+  ]
+}
