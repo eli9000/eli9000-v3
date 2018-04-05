@@ -12,8 +12,6 @@ const NavWrapper = styled.div.attrs({
   justify-content: center;
   align-items: center;
   height: 30vh;
-  @media (min-width: 768px) {
-  }
 `;
 
 const LinkList = styled.ul`
@@ -27,7 +25,6 @@ const LinkList = styled.ul`
   list-style-type: none;
   @media (min-width: 768px) {
     flex-flow: row nowrap;
-    align-items: flex-end;
   }
   > li,
   a {
@@ -39,8 +36,6 @@ const LinkList = styled.ul`
     background: lightblue;
     @media (min-width: 768px) {
       margin: 10px;
-      height: 30%;
-      align-content: flex-end;
     }
   }
 `;
@@ -49,24 +44,22 @@ const LinkList = styled.ul`
 
 const NavBar = () => {
   return (
-    <footer>
-      <NavWrapper>
-        <LinkList>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/coding">Coding</Link>
-          </li>
-          <li>
-            <Link to="/resume">Resume</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </LinkList>
-      </NavWrapper>
-    </footer>
+    <NavWrapper>
+      <LinkList>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/coding">Coding</Link>
+        </li>
+        <li>
+          <Link to="/resume">Resume</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </LinkList>
+    </NavWrapper>
   );
 };
 

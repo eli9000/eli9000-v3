@@ -3,8 +3,6 @@ import styled from 'styled-components';
 
 /* ***************************************************************** */
 
-import ButtonTest from '../components/ButtonTest';
-
 const HomeWrapper = styled.div.attrs({
   className: 'Home',
 })`
@@ -22,7 +20,6 @@ const Home = () => {
   return (
     <HomeWrapper>
       <h1>Homey Home Evening!</h1>
-      <ButtonTest />
     </HomeWrapper>
   );
 };

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Icon from './Icon';
 import Rating from './Rating';
 
-const CardWrapper = styled.div`
+const Wrapper = styled.div`
   height: auto;
   width: 90%;
   display: flex;
@@ -20,51 +20,41 @@ const CardWrapper = styled.div`
 const IconBox = styled.div.attrs({
   className: 'fa-4x',
 })`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  padding: 5px;
+  align-self: center;
 `;
 
-const Container = styled.div`
+const Section = styled.section`
   display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-`;
-
-const HeadInfo = styled.div`
-  display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  width: 100%;
+  align-content: center;
+  padding-left: 10px;
 `;
 
 const Title = styled.h1`
   align-self: center;
-  width: auto;
+  width: 120px;
   margin: 0;
 `;
 
 const Body = styled.p`
-  align-self: flex-start;
+  align-self: center;
   margin-left: 10px;
 `;
 
 const SkillCard = ({ name, fa, color, rating = 0, desc }) => {
+
   return (
-    <CardWrapper>
+    <Wrapper>
       <IconBox>
         <Icon className={fa} color={color} />
       </IconBox>
-      <Container>
-        <HeadInfo>
-          <Title>{name}</Title>
-          <Rating rating={rating} />
-        </HeadInfo>
-        <Body>{desc}</Body>
-      </Container>
-    </CardWrapper>
+      <Section>
+        <Title>{name}</Title>
+        <Rating rating={rating} />
+      </Section>
+      <Body>{desc}</Body>
+    </Wrapper>
   );
 };
 
