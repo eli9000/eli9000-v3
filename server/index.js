@@ -12,28 +12,33 @@ import schema from './db/postgres/handler.js';
 
 const app = express();
 
-const {
-    NODE_ENV,
-    API_PORT = 4000,
-} = process.env
+const { NODE_ENV, API_PORT = 4000 } = process.env;
 
 app.use('*', cors());
 
 app.use(bodyParser.json());
 
-app.use('/graphql', graphqlExpress({
+app.use(
+  '/graphql',
+  graphqlExpress({
     schema,
     context: {
-        db,
+      db,
     },
     allowUndefinedInRosolve: true,
-    graqhiql: true
-}));
+    graqhiql: true,
+  }),
+);
 
-app.use('/graphiql', graphiqlExpress({
+app.use(
+  '/graphiql',
+  graphiqlExpress({
     endpointURL: '/graphql',
-}));
+  }),
+);
 
 app.use('/healthcheck', (req, res) => res.status(200).send('ok'));
 
-app.listen(API_PORT, () => console.log(blue("Server listening to PORT: " + yellow(`${API_PORT}`))));
+app.listen(API_PORT, () =>
+  console.log(blue('Server listening to PORT: ' + yellow(`${API_PORT}`))),
+);
