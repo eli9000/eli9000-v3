@@ -7,12 +7,10 @@ const ContactWrapper = styled.div.attrs({
   className: 'Projects',
 })`
   dislpay: flex;
-  flex: 1 100%;
-  justify-content: center;
-  max-height: 60vh;
-  min-height: 60vh;
+  height: 100%;
   > h1 {
-    margin: 0;
+    margin: 10px;
+    text-align: center;
   }
 `;
 

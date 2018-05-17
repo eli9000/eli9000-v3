@@ -10,13 +10,8 @@ const CodingWrapper = styled.div.attrs({
   className: 'Coding',
 })`
   dislpay: flex;
-  flex: 1 100%;
-  justify-content: center;
-  max-height: 60vh;
-  min-height: 60vh;
-  overflow: scroll;
   > h1 {
-    margin: 0;
+    margin: 10px;
     text-align: center;
   }
 `;
@@ -40,7 +35,7 @@ const query = gql`
 
 const Coding = ({ data: { loading, error, skills = [] } }) => {
   if (loading) {
-    return <p>Loading...</p>;
+    return <p>So many skills, so little time...</p>;
   }
   if (error) {
     return <p>{error.message}</p>;

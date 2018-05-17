@@ -9,19 +9,17 @@ const ContactWrapper = styled.div.attrs({
   className: 'Contact',
 })`
   dislpay: flex;
-  flex: 1 100%;
-  justify-content: center;
-  max-height: 60vh;
-  min-height: 60vh;
+  height: 100%;
   > h1 {
-    margin: 0;
+    margin: 10px;
+    text-align: center;
   }
 `;
 
 const ContactCard = ({ id, type, info, link }) => {
   return (
     <div>
-      {type}: {info}, {link}
+      {type}: {info}, <a href={link}>Click Here</a>
     </div>
   );
 };

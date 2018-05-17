@@ -1,8 +1,6 @@
 const query = {
-  dev: 'SELECT * FROM development',
-  design: 'SELECT * FROM design',
-  aws: 'SELECT * FROM aws',
-  contact: 'SELECT * FROM contact_info',
+  dev: 'SELECT * FROM development ORDER BY id ASC',
+  contact: 'SELECT * FROM contact_info ORDER BY id ASC',
 };
 
 export default {

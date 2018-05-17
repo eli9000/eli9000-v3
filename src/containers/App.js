@@ -11,15 +11,11 @@ const AppWrapper = styled.div.attrs({
   className: 'App',
 })`
   dislpay: flex;
-  flex: 1 100%;
-  height: 100vh;
+  justify-content: center;
+  max-width: 980px;
+  margin: auto;
+  background: white;
   @media (min-width: 768px) {
-    .Header {
-      flex: 1 100%;
-    }
-    .Navbar {
-      flex: 1 auto;
-    }
   }
 `;
 
@@ -29,7 +25,7 @@ class App extends Component {
       <AppWrapper>
         <Header />
         <NavBar />
-        {this.props.children}
+        <div className="main">{this.props.children}</div>
       </AppWrapper>
     );
   }

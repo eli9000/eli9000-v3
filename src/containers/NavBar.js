@@ -7,36 +7,25 @@ import { Link } from 'react-router-dom';
 const NavWrapper = styled.div.attrs({
   className: 'NavBar',
 })`
-  dislpay: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-`;
-
-const LinkList = styled.ul`
   display: flex;
-  flex-flow: column;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  margin: 0;
-  padding-left: 0;
-  list-style-type: none;
-  @media (min-width: 768px) {
-    width: 250px;
-  }
-  > li,
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0 10px;
+  > a {
+    color: white;
+    background-color: blue;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
     width: 100%;
-    height: 100%;
-    background: lightblue;
-    @media (min-width: 768px) {
-      margin: 10px;
-    }
+  }
+  > a:hover {
+    background-color: skyblue;
+    color: black;
+  }
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
   }
 `;
 
@@ -45,23 +34,11 @@ const LinkList = styled.ul`
 const NavBar = () => {
   return (
     <NavWrapper>
-      <LinkList>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/coding">Coding</Link>
-        </li>
-        <li>
-          <Link to="/projects">Projects</Link>
-        </li>
-        <li>
-          <Link to="/resume">Resume</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </LinkList>
+      <Link to="/about">About</Link>
+      <Link to="/coding">Coding</Link>
+      <Link to="/projects">Projects</Link>
+      <Link to="/resume">Resume</Link>
+      <Link to="/contact">Contact Me</Link>
     </NavWrapper>
   );
 };
