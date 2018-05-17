@@ -6,14 +6,14 @@ const query = {
 };
 
 export default {
-    Query: {
-        skills: async (_, args, { db }) => {
-            const { rows } = await db.query(query.dev);
-            return rows;
-        },
-        contact: async (_, args, { db }) => {
-            const { rows } = await db.query(query.contact);
-            return rows;
-        }
-    }
-}
+  Query: {
+    skills: async (_, args, { db }) => {
+      const { rows } = await db.query(query.dev);
+      return rows;
+    },
+    contacts: async (_, args, { db }) => {
+      const { rows } = await db.query(query.contact);
+      return rows;
+    },
+  },
+};

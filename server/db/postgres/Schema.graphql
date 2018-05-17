@@ -7,7 +7,7 @@ type Skill {
   color: String
 }
 
-type Info {
+type Contact {
   id: ID
   type: String!
   info: String
@@ -16,5 +16,5 @@ type Info {
 
 type Query {
   skills: [Skill]
-  contact: [Info]
+  contacts: [Contact]
 }

@@ -24,7 +24,7 @@ const LinkList = styled.ul`
   padding-left: 0;
   list-style-type: none;
   @media (min-width: 768px) {
-    flex-flow: row nowrap;
+    width: 250px;
   }
   > li,
   a {
@@ -51,6 +51,9 @@ const NavBar = () => {
         </li>
         <li>
           <Link to="/coding">Coding</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
           <Link to="/resume">Resume</Link>

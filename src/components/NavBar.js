@@ -13,6 +13,9 @@ const NavWrapper = styled.div.attrs({
   align-items: center;
   height: 30vh;
   @media (min-width: 768px) {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
   }
 `;
 
@@ -26,21 +29,19 @@ const LinkList = styled.ul`
   padding-left: 0;
   list-style-type: none;
   @media (min-width: 768px) {
-    flex-flow: row nowrap;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: flex-start;
   }
-  > li,
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: lightblue;
-    @media (min-width: 768px) {
-      margin: 10px;
-      height: 30%;
-      align-content: flex-end;
+  > li {
+    a {
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background: lightblue;
+      }
     }
   }
 `;

@@ -8,6 +8,7 @@ import App from './containers/App';
 import Home from './containers/Home';
 import About from './containers/About';
 import Coding from './containers/Coding';
+import Projects from './containers/Projects';
 import Resume from './containers/Resume';
 import Contact from './containers/Contact';
 
@@ -23,6 +24,7 @@ const Routes = (
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/coding" component={Coding} />
+        <Route exact path="/projects" component={Projects} />
         <Route exact path="/resume" component={Resume} />
         <Route exact path="/contact" component={Contact} />
       </App>

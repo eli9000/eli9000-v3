@@ -13,6 +13,14 @@ const AppWrapper = styled.div.attrs({
   dislpay: flex;
   flex: 1 100%;
   height: 100vh;
+  @media (min-width: 768px) {
+    .Header {
+      flex: 1 100%;
+    }
+    .Navbar {
+      flex: 1 auto;
+    }
+  }
 `;
 
 class App extends Component {
@@ -20,8 +28,8 @@ class App extends Component {
     return (
       <AppWrapper>
         <Header />
-        {this.props.children}
         <NavBar />
+        {this.props.children}
       </AppWrapper>
     );
   }
