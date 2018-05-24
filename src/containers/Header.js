@@ -11,12 +11,17 @@ const HeaderWrapper = styled.div.attrs({
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  > a {
+    text-decoration: none;
+  }
 `;
 
 export default () => {
   return (
     <HeaderWrapper>
-      <Link to="/">eli9000</Link>
+      <Link to="/">
+        <code>eli9000</code>
+      </Link>
       <Icon className="fab fa-facebook fa-2x" color={'blue'} />
     </HeaderWrapper>
   );

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// import Card from '../components/Card';
+
 /* ***************************************************************** */
 
 const HomeWrapper = styled.div.attrs({
@@ -17,7 +19,7 @@ const HomeWrapper = styled.div.attrs({
 const Home = () => {
   return (
     <HomeWrapper>
-      <h1>Homey Home Evening!</h1>
+      <h1>Welcome traveler!</h1>
     </HomeWrapper>
   );
 };

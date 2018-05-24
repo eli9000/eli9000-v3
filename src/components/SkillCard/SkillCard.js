@@ -1,15 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-
+å;
 import Icon from './Icon';
 import Rating from './Rating';
 
 const CardWrapper = styled.div`
-  height: auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  height: auto;
+  width: auto;
+  background-color: white;
   margin: 0 10px 20px 10px;
   padding: 10px 10px 10px 0;
   /* prettier-ignore */

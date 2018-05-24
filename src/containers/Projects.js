@@ -17,7 +17,7 @@ const ContactWrapper = styled.div.attrs({
 const Projects = () => {
   return (
     <ContactWrapper>
-      <h1>Here's what I'm working on</h1>
+      <h1>What I'm working on</h1>
     </ContactWrapper>
   );
 };
