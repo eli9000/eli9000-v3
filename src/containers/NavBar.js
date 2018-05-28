@@ -16,7 +16,6 @@ const NavWrapper = styled.div.attrs({
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
-    background-color: gold;
     width: 100%;
     margin-bottom: 5px;
   }
@@ -29,13 +28,11 @@ const NavWrapper = styled.div.attrs({
   @media screen and (max-width: 700px) {
     display: flex; /* ${({ state }) =>
       state === 'CLOSED' ? 'none' : 'flex'} */
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+    flex-flow: row wrap;
+    background: seagreen;
+    opacity: 0.5;
     > a {
+      width: auto;
     }
     > a:last-child {
       border-bottom: none;

@@ -1,27 +1,13 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
+import Wrapper from './Wrapper';
 
 /* ***************************************************************** */
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: stretch;
-
-  margin: 0 10px 20px 10px;
-  padding: 10px 10px 10px 5px;
-  width: auto;
-  /* prettier-ignore */
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
-              0 1px 18px 0 rgba(0, 0, 0, 0.12),
-              0 3px 5px -1px rgba(0, 0, 0, 0.3);
-`;
-
 const Title = styled.h1`
   margin: 10px;
-  text-align: center;
   color: green;
   text-decoration: underline;
 `;
@@ -35,9 +21,9 @@ const Content = styled.div`
   }
 `;
 
-const Blurb = styled.div`
+const Body = styled.div`
   text-align: left;
-  background-color: red;
+  background-color: lightblue;
   padding: 10px;
   @media screen and (max-width: 700px) {
     line-height: 1.5em;
@@ -49,23 +35,29 @@ const Pic = styled.img`
   width: 40%;
   height: 40%;
   @media screen and (max-width: 700px) {
-    height: 60%;
-    width: 60%;
+    width: 100%;
+    height: auto;
   }
 `;
 
 /* ***************************************************************** */
 
-const Card = ({ title, blurb, image }) => {
+const Card = ({ title, body, image }) => {
   return (
-    <Wrapper>
+    <Wrapper flex="column">
       <Title>{title}</Title>
       <Content>
-        <Blurb>{blurb}</Blurb>
+        <Body>{body}</Body>
         <Pic src={image} alt="ish delt" />
       </Content>
     </Wrapper>
   );
+};
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default Card;

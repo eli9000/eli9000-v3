@@ -2,12 +2,40 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const InfoCard = ({ title, body, image }) => {
+import Wrapper from './Wrapper';
+
+/* ***************************************************************** */
+
+const Title = styled.h1`
+  margin: 10px;
+  color: green;
+  text-decoration: underline;
+`;
+
+const Body = styled.div`
+  text-align: left;
+  background-color: lightblue;
+  padding: 10px;
+  @media screen and (max-width: 700px) {
+    line-height: 1.5em;
+    padding: 10px;
+  }
+`;
+
+/* ***************************************************************** */
+
+const InfoCard = ({ title, body }) => {
   return (
-    <div className="wrapper">
-      <h1>{title}</h1>
-    </div>
+    <Wrapper flex="column">
+      <Title>{title}</Title>
+      <Body>{body}</Body>
+    </Wrapper>
   );
 };
 
-componentName.propTypes = {};
+InfoCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired,
+};
+
+export default InfoCard;

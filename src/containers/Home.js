@@ -14,12 +14,22 @@ const HomeWrapper = styled.div.attrs({
     margin: 10px;
     text-align: center;
   }
+  > img {
+    max-width: 100%;
+    height: auto;
+  }
 `;
 
 const Home = () => {
   return (
     <HomeWrapper>
       <h1>Welcome traveler!</h1>
+      <img
+        src="images/utes-pano.jpg"
+        alt="pano-ish"
+        width="980"
+        height="auto"
+      />
     </HomeWrapper>
   );
 };
