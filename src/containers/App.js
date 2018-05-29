@@ -13,6 +13,7 @@ const AppWrapper = styled.div.attrs({
   dislpay: flex;
   justify-content: center;
   max-width: 980px;
+  min-width: 375px;
   margin: auto;
   background: white;
   @media (min-width: 768px) {

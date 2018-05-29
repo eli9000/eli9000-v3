@@ -16,6 +16,7 @@ const ResumeWrapper = styled.div.attrs({
   > img {
     max-width: 100%;
     height: auto;
+    padding: 10px;
   }
 `;
 

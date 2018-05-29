@@ -29,13 +29,10 @@ const NavWrapper = styled.div.attrs({
     display: flex; /* ${({ state }) =>
       state === 'CLOSED' ? 'none' : 'flex'} */
     flex-flow: row wrap;
-    background: seagreen;
-    opacity: 0.5;
     > a {
-      width: auto;
+      width: 33%;
     }
     > a:last-child {
-      border-bottom: none;
     }
   }
 `;

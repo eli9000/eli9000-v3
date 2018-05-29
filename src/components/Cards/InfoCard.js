@@ -8,13 +8,11 @@ import Wrapper from './Wrapper';
 
 const Title = styled.h1`
   margin: 10px;
-  color: green;
   text-decoration: underline;
 `;
 
 const Body = styled.div`
   text-align: left;
-  background-color: lightblue;
   padding: 10px;
   @media screen and (max-width: 700px) {
     line-height: 1.5em;
