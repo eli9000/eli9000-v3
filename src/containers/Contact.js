@@ -16,6 +16,15 @@ const ContactWrapper = styled.div.attrs({
     margin: 10px;
     text-align: center;
   }
+  > a {
+    text-decoration: none;
+  }
+  > a:visited {
+    color: black;
+  }
+  > a:link {
+    color: black;
+  }
 `;
 
 /* ***************************************************************** */

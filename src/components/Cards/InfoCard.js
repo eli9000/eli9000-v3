@@ -8,7 +8,6 @@ import Wrapper from './Wrapper';
 
 const Title = styled.h1`
   margin: 10px;
-  text-decoration: underline;
 `;
 
 const Body = styled.div`

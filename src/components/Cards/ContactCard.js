@@ -41,21 +41,18 @@ const Body = styled.div`
   margin: 0 0 0 10px;
 `;
 
-// const Button = styled.button`
-//   background: lightblue;
-//   color: black;
-//   margin: 1em;
-//   padding: 0.25em 1em;
-//   border: 2px solid blue;
-//   border-radius: 3px;
-// `;
+const CardWrapper = Wrapper.extend`
+  &:hover {
+    box-shadow: none;
+  }
+`;
 
 /* ***************************************************************** */
 
 const ContactCard = ({ className, name, info, link, fa, color }) => {
   return (
-    <Link to={link} className={className}>
-      <Wrapper data-id="wrapper">
+    <Link to={link}>
+      <CardWrapper>
         <IconBox>
           <Icon className={fa} color={color} />
         </IconBox>
@@ -65,7 +62,7 @@ const ContactCard = ({ className, name, info, link, fa, color }) => {
           </HeadInfo>
           <Body>{info}</Body>
         </Container>
-      </Wrapper>
+      </CardWrapper>
     </Link>
   );
 };

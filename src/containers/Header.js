@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import Icon from '../components/SkillCard/Icon';
-
 const HeaderWrapper = styled.div.attrs({
   className: 'Header',
 })`
@@ -20,9 +18,8 @@ export default () => {
   return (
     <HeaderWrapper>
       <Link to="/">
-        <code>eli9000</code>
+        <code>eli9000.com</code>
       </Link>
-      <Icon className="fab fa-facebook fa-2x" color={'blue'} />
     </HeaderWrapper>
   );
 };

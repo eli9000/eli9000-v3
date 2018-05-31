@@ -19,6 +19,9 @@ const NavWrapper = styled.div.attrs({
     width: 100%;
     margin-bottom: 5px;
   }
+  > a:link, a:visited {
+    color: black;
+  }
   > a:hover {
     /* prettier-ignore */
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),

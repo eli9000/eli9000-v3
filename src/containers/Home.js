@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import InfoCard from '../components/Cards/InfoCard';
-
 /* ***************************************************************** */
 
 const HomeWrapper = styled.div.attrs({
@@ -19,6 +17,9 @@ const HomeWrapper = styled.div.attrs({
     height: auto;
     padding: 10px;
   }
+  > section {
+    padding: 0 10px;
+  }
 `;
 
 /* ***************************************************************** */
@@ -26,17 +27,25 @@ const HomeWrapper = styled.div.attrs({
 const Home = () => {
   return (
     <HomeWrapper>
-      <h1>Howdy.</h1>
+      <h1>Welcome to V4.0!</h1>
       <img
         src="images/utes-pano.jpg"
         alt="pano-ish"
         width="980"
         height="auto"
       />
-      <InfoCard
-        title="On matters of this website..."
-        body="Duis ad aliqua Lorem exercitation proident eu commodo ad laborum ut id. Eu reprehenderit dolor eiusmod proident qui enim occaecat in sunt veniam sunt ea. Minim sit reprehenderit velit pariatur dolor nisi velit voluptate nostrud."
-      />
+      <section>
+        <h2>I know it's ugly, but hear me out...</h2>
+        <p>
+          The purpose of this site is obviously NOT to show off my design skills
+          but rather to demonstrate a working knowledge of various frameworks,
+          libraries, packages, etc.
+        </p>
+        <p>
+          Built from scratch using React, GraphQL, AWS RDS for database, Node.js
+          for development backend and Serverless AWS production backend.
+        </p>
+      </section>
     </HomeWrapper>
   );
 };

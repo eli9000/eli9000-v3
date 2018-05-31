@@ -1,7 +1,17 @@
 {
   "name": "eli9000-v3",
   "version": "0.1.0",
+  "description": "Portfolio page",
   "private": true,
+  "author": {
+    "name": "Eli Johnson",
+    "email": "eli9000@gmail.com",
+    "url": "https://github.com/eli9000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eli9000/eli9000-v3.git"
+  },
   "dependencies": {
     "apollo-boost": "^0.1.2",
     "apollo-server-express": "^1.3.2",

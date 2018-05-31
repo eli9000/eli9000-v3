@@ -8,7 +8,6 @@ import Wrapper from './Wrapper';
 
 const Title = styled.h1`
   margin: 10px;
-  text-decoration: underline;
 `;
 
 const Content = styled.div`
@@ -32,6 +31,8 @@ const Body = styled.div`
 const Pic = styled.img`
   width: 40%;
   height: 40%;
+  padding-bottom: 10px;
+  border-radius: 5px;
   @media screen and (max-width: 700px) {
     width: 100%;
     height: auto;
@@ -40,7 +41,7 @@ const Pic = styled.img`
 
 /* ***************************************************************** */
 
-const Card = ({ title, body, image }) => {
+const PicCard = ({ title, body, image }) => {
   return (
     <Wrapper flex="column">
       <Title>{title}</Title>
@@ -52,10 +53,10 @@ const Card = ({ title, body, image }) => {
   );
 };
 
-Card.propTypes = {
+PicCard.propTypes = {
   title: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };
 
-export default Card;
+export default PicCard;
