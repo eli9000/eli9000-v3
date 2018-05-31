@@ -3,6 +3,8 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import styled from 'styled-components';
 
+import ContactCard from '../components/Cards/ContactCard';
+
 /* ***************************************************************** */
 
 const ContactWrapper = styled.div.attrs({
@@ -16,23 +18,17 @@ const ContactWrapper = styled.div.attrs({
   }
 `;
 
-const ContactCard = ({ id, type, info, link }) => {
-  return (
-    <div>
-      {type}: {info}, <a href={link}>Click Here</a>
-    </div>
-  );
-};
-
 /* ***************************************************************** */
 
 const query = gql`
   query contacts {
     contacts {
       id
-      type
+      name
       info
       link
+      fa
+      color
     }
   }
 `;
@@ -41,7 +37,7 @@ const query = gql`
 
 const Contact = ({ data: { loading, error, contacts = [] } }) => {
   if (loading) {
-    return <p>Loading...</p>;
+    return <p>Gettin that info so you can get at meh...</p>;
   }
   if (error) {
     return <p>{error.message}</p>;

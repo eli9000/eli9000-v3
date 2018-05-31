@@ -21,6 +21,8 @@ const HomeWrapper = styled.div.attrs({
   }
 `;
 
+/* ***************************************************************** */
+
 const Home = () => {
   return (
     <HomeWrapper>
@@ -31,7 +33,10 @@ const Home = () => {
         width="980"
         height="auto"
       />
-        <InfoCard title="On matters of this website..." body="Duis ad aliqua Lorem exercitation proident eu commodo ad laborum ut id. Eu reprehenderit dolor eiusmod proident qui enim occaecat in sunt veniam sunt ea. Minim sit reprehenderit velit pariatur dolor nisi velit voluptate nostrud." />
+      <InfoCard
+        title="On matters of this website..."
+        body="Duis ad aliqua Lorem exercitation proident eu commodo ad laborum ut id. Eu reprehenderit dolor eiusmod proident qui enim occaecat in sunt veniam sunt ea. Minim sit reprehenderit velit pariatur dolor nisi velit voluptate nostrud."
+      />
     </HomeWrapper>
   );
 };
