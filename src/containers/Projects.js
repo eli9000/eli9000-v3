@@ -8,7 +8,8 @@ import InfoCard from '../components/Cards/InfoCard';
 const ContactWrapper = styled.div.attrs({
   className: 'Projects',
 })`
-  dislpay: flex;
+  display: flex;
+  flex-flow: column;
   height: 100%;
   > h1 {
     margin: 10px;
@@ -30,6 +31,14 @@ const Projects = () => {
       />
       <InfoCard
         title="Gokey Locksmiths"
+        body="Aliquip cupidatat et consequat culpa eiusmod nisi. Officia proident Lorem quis eu adipisicing. Consectetur consequat eu veniam exercitation id exercitation incididunt nostrud aute et magna deserunt. Laborum minim officia irure culpa ex non qui. Sunt in duis consequat ipsum nisi nisi velit pariatur consequat. In nulla laborum commodo non eu aliqua laborum in qui consectetur. Reprehenderit elit ea culpa tempor officia nostrud dolor minim magna sit consequat."
+      />
+      <InfoCard
+        title="Devs who Shred"
+        body="Aliquip cupidatat et consequat culpa eiusmod nisi. Officia proident Lorem quis eu adipisicing. Consectetur consequat eu veniam exercitation id exercitation incididunt nostrud aute et magna deserunt. Laborum minim officia irure culpa ex non qui. Sunt in duis consequat ipsum nisi nisi velit pariatur consequat. In nulla laborum commodo non eu aliqua laborum in qui consectetur. Reprehenderit elit ea culpa tempor officia nostrud dolor minim magna sit consequat."
+      />
+      <InfoCard
+        title="Security"
         body="Aliquip cupidatat et consequat culpa eiusmod nisi. Officia proident Lorem quis eu adipisicing. Consectetur consequat eu veniam exercitation id exercitation incididunt nostrud aute et magna deserunt. Laborum minim officia irure culpa ex non qui. Sunt in duis consequat ipsum nisi nisi velit pariatur consequat. In nulla laborum commodo non eu aliqua laborum in qui consectetur. Reprehenderit elit ea culpa tempor officia nostrud dolor minim magna sit consequat."
       />
     </ContactWrapper>

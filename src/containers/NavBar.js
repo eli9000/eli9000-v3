@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 /* ***************************************************************** */
 
 const NavWrapper = styled.div.attrs({
-  className: 'NavBar',
+  className: 'Navbar',
 })`
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin: 5px 5px;
+  margin: 0 5px;
   > a {
     padding: 14px 20px;
     text-decoration: none;
@@ -42,16 +42,18 @@ const NavWrapper = styled.div.attrs({
 
 /* ***************************************************************** */
 
-const NavBar = () => {
-  return (
-    <NavWrapper>
-      <Link to="/about">About Me</Link>
-      <Link to="/coding">Coding</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/resume">Resume</Link>
-      <Link to="/contact">Contact Me</Link>
-    </NavWrapper>
-  );
-};
+class Navbar extends Component {
+  render() {
+    return (
+      <NavWrapper>
+        <Link to="/">Home</Link>
+        <Link to="/coding">Code</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/resume">Resume</Link>
+        <Link to="/contact">Contact Me</Link>
+      </NavWrapper>
+    );
+  }
+}
 
-export default NavBar;
+export default Navbar;

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: flex;
   flex-flow: ${props => props.flex};
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
 
   margin: 0 10px 10px 10px;

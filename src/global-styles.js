@@ -6,19 +6,16 @@ injectGlobal`
   @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
   :root {
-    --primary-color: #36a9e0;
+    --primary-color: #330000;
     --primary-accent-color: #008ac3;
 
-    --background-color: #ffffff;
-    --background-gray: #D8D8D8;
+    --background-color: #A22522;
+
+    --heading: #B399A2;
 
     --black: #333333;
-    --gray: gray;
-    --green: lightgreen;
-    --white: #ffffff;
 
     --font-size: 10pt;
-    --placeholder: gray;
   }
 
   #app {
