@@ -46,7 +46,7 @@ const Coding = ({ data: { loading, error, skills = [] } }) => {
 
   return (
     <CodingWrapper>
-      <h1>Coding Ish</h1>
+      <h1>Some code I know</h1>
       {skills.map(skill => <SkillCard key={skill.id} {...skill} />)}
     </CodingWrapper>
   );

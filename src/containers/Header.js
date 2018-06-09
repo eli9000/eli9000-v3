@@ -9,9 +9,6 @@ const HeaderWrapper = styled.div.attrs({
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  > a {
-    text-decoration: none;
-  }
 `;
 
 export default () => {

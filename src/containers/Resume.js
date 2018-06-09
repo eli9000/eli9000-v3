@@ -6,7 +6,8 @@ import styled from 'styled-components';
 const ResumeWrapper = styled.div.attrs({
   className: 'Resume',
 })`
-  dislpay: flex;
+  display: flex;
+  flex-flow: column;
   height: 100%;
   overflow: scroll;
   > h1 {

@@ -4,7 +4,7 @@ import { ApolloClient, HttpLink, InMemoryCache } from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 
 // Container imports
-import App from './containers/App';
+import App from './App';
 import Home from './containers/Home';
 import About from './containers/About';
 import Coding from './containers/Coding';
@@ -28,6 +28,7 @@ const Routes = (
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/coding" component={Coding} />
+
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/resume" component={Resume} />
         <Route exact path="/contact" component={Contact} />
