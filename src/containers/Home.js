@@ -13,15 +13,24 @@ const HomeWrapper = styled.div.attrs({
   height: 100%;
   > h1 {
     margin: 10px;
+    padding: 10px;
     text-align: center;
+    text-shadow: 2px 2px 4px gray;
   }
   > .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    > img {
-      max-width: 100%;
-      height: auto;
+
+    background-color: var(--background-color);
+
+    > .img {
+      background-color: var(--background-color);
+      background-image: url('/images/utes-pano.jpg');
+      background-position: center;
+      background-size: cover;
+      height: 200px;
+      width: 100%;
       /* prettier-ignore */
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
                   0 1px 18px 0 rgba(0, 0, 0, 0.12),
@@ -38,13 +47,9 @@ const HomeWrapper = styled.div.attrs({
 const Home = () => {
   return (
     <HomeWrapper>
+      <h1>Welcome to eli9000.com v4.0!</h1>
       <div className="banner">
-        <img
-          src="images/utes-pano.jpg"
-          alt="pano-ish"
-          width="100%"
-          height="auto"
-        />
+        <div className="img" />
       </div>
       <section>
         <h1>I know it's ugly, but hear me out...</h1>
@@ -52,32 +57,37 @@ const Home = () => {
         <p>
           Instead of using a component library, I decided to build my own. Not
           to reinvent the wheel, but to better aquaint myself with
-          styled-components(link) and flexbox(link). The meager library of
-          components I've assembled will suffice for now. I'm working on
-          code-splitting for better reusability and adhearance to the DRY rule.
+          styled-components, flexbox, code-splitting, etc. The meager library of
+          components I've assembled will suffice for now. I'm working on better
+          reusability, global-styles, and adhearance to the DRY rule.
+        </p>
+        <p>
+          Overall, I'm proud of what I've accomplished so far. It's not perfect,
+          and it's certainly not a showpiece for my design prowess, too
+          left-brained I suppose. But that's ok, it's what's under the hood that
+          counts for this project.
         </p>
         <hr />
         <h1>
           The purpose of this site is to show an understanding of the following:
         </h1>
         <ul>
-          <li>Data acquisition, management and manipulation</li>
-          <li>Ability to build reusable and functional components</li>
-          <li>Demonstrate good code practices</li>
+          <li>
+            Using React on the front-end to build reusable, dynamic, and styled
+            components.
+          </li>
+          <li>
+            Aquiring, managing, and manipulating data using GraphQL's API layer
+            and Postgres RDS for datastore.
+          </li>
+          <li>Deployed AWS Serverless architecture on the back-end.</li>
+          <li>Using Node.js to build a working dev environment back-end</li>
         </ul>
+        <hr />
         <p>
-          Built from scratch using React, GraphQL, AWS RDS for database, Node.js
-          for development backend and Serverless AWS production backend. Styled,
-          if that's what you want to call it, with Styled-Components and
-          Flexbox.
-        </p>
-        <p>
-          That which I most can't the least is to do never a bad job, but always
-          a good.
-        </p>
-        <p>
-          This is a complicated site man... lot of ins, lot of outs, lot of
-          what-have-yous. Lot of strands to keep in ol' duders head.
+          This is a very complicated site, man. You know, a lotta ins, a lotta
+          outs, a lotta what-have-yous. And, uh, a lotta strands to keep in my
+          head, man. Lotta strands in ol' Duders head.
         </p>
       </section>
     </HomeWrapper>

@@ -13,6 +13,7 @@ const ContactWrapper = styled.div.attrs({
   height: 100%;
   > h1 {
     margin: 10px;
+    padding-top: 10px;
     text-align: center;
   }
 `;
@@ -20,26 +21,27 @@ const ContactWrapper = styled.div.attrs({
 const Projects = () => {
   return (
     <ContactWrapper>
-      <h1>What I'm working on</h1>
+      <h1>What I'm Working On</h1>
+      <br />
       <InfoCard
         title="801-code"
-        body="Elit do officia labore nulla et reprehenderit cupidatat sunt elit Lorem sint velit commodo. Minim reprehenderit eiusmod dolor Lorem officia officia pariatur amet ad ea laborum elit. Lorem anim non veniam elit cupidatat laborum sint minim minim consequat id. Non dolor sunt est nisi."
+        body="Another project built using AWS Serverless architecure. Hoping to mold it in to a site where coders from Utah can share projects and advice about anything coding."
       />
       <InfoCard
         title="Homewise"
-        body="Eu qui fugiat mollit sunt voluptate nostrud duis nulla reprehenderit. Irure ullamco labore proident deserunt ipsum. Ut velit ut labore occaecat velit aute enim minim nisi. Ullamco voluptate labore minim tempor quis duis. Labore consectetur esse ad reprehenderit irure ullamco sint."
+        body="Basement-labs project currently under development. A place where users can find deals on everyday home maintenance projects."
       />
       <InfoCard
         title="Gokey Locksmiths"
-        body="Aliquip cupidatat et consequat culpa eiusmod nisi. Officia proident Lorem quis eu adipisicing. Consectetur consequat eu veniam exercitation id exercitation incididunt nostrud aute et magna deserunt. Laborum minim officia irure culpa ex non qui. Sunt in duis consequat ipsum nisi nisi velit pariatur consequat. In nulla laborum commodo non eu aliqua laborum in qui consectetur. Reprehenderit elit ea culpa tempor officia nostrud dolor minim magna sit consequat."
+        body="Rebuild of an outdated Adobe Muse site. Using a custom Wordpress template to help be more responsive and to better gather data."
       />
       <InfoCard
         title="Devs who Shred"
-        body="Aliquip cupidatat et consequat culpa eiusmod nisi. Officia proident Lorem quis eu adipisicing. Consectetur consequat eu veniam exercitation id exercitation incididunt nostrud aute et magna deserunt. Laborum minim officia irure culpa ex non qui. Sunt in duis consequat ipsum nisi nisi velit pariatur consequat. In nulla laborum commodo non eu aliqua laborum in qui consectetur. Reprehenderit elit ea culpa tempor officia nostrud dolor minim magna sit consequat."
+        body="Meetup idea for developers who shred the gnar gnar. Check back soon for more info!"
       />
       <InfoCard
         title="Security"
-        body="Aliquip cupidatat et consequat culpa eiusmod nisi. Officia proident Lorem quis eu adipisicing. Consectetur consequat eu veniam exercitation id exercitation incididunt nostrud aute et magna deserunt. Laborum minim officia irure culpa ex non qui. Sunt in duis consequat ipsum nisi nisi velit pariatur consequat. In nulla laborum commodo non eu aliqua laborum in qui consectetur. Reprehenderit elit ea culpa tempor officia nostrud dolor minim magna sit consequat."
+        body="A personal home security system I'm building with a Raspberry Pi and powered by Python and Aws."
       />
     </ContactWrapper>
   );

@@ -9,14 +9,17 @@ const HeaderWrapper = styled.div.attrs({
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  background-color: var(--black);
+  border-bottom: 1px solid gray;
+  > a {
+    color: lightgrey;
+  }
 `;
 
 export default () => {
   return (
     <HeaderWrapper>
-      <Link to="/">
-        <code>eli9000.com</code>
-      </Link>
+      <Link to="/">eli9000.com</Link>
     </HeaderWrapper>
   );
 };

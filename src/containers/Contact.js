@@ -10,20 +10,27 @@ import ContactCard from '../components/Cards/ContactCard';
 const ContactWrapper = styled.div.attrs({
   className: 'Contact',
 })`
-  dislpay: flex;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   > h1 {
     margin: 10px;
+    padding-top: 10px;
     text-align: center;
   }
-  > a {
-    text-decoration: none;
-  }
-  > a:visited {
-    color: black;
-  }
-  > a:link {
-    color: black;
+
+  > .contacts {
+    > a {
+      text-decoration: none;
+    }
+    > a:visited {
+      color: black;
+    }
+    > a:link {
+      color: black;
+    }
   }
 `;
 
@@ -46,7 +53,7 @@ const query = gql`
 
 const Contact = ({ data: { loading, error, contacts = [] } }) => {
   if (loading) {
-    return <p>Gettin that info so you can get at meh...</p>;
+    return <p>Gettin that info...</p>;
   }
   if (error) {
     return <p>{error.message}</p>;
@@ -54,8 +61,12 @@ const Contact = ({ data: { loading, error, contacts = [] } }) => {
 
   return (
     <ContactWrapper>
-      <h1>Contact A Ninja</h1>
-      {contacts.map(contact => <ContactCard key={contact.id} {...contact} />)}
+      <h1>Contact and Social</h1>
+      <br />
+      <div className="contacts">
+        {' '}
+        {contacts.map(contact => <ContactCard key={contact.id} {...contact} />)}
+      </div>
     </ContactWrapper>
   );
 };

@@ -8,7 +8,8 @@ import PicCard from '../components/Cards/PicCard';
 const AboutWrapper = styled.div.attrs({
   className: 'About',
 })`
-  dislpay: flex;
+  display: flex;
+  flex-flow: column nowrap;
   height: 100%;
   > h1 {
     margin: 10px;
@@ -19,20 +20,7 @@ const AboutWrapper = styled.div.attrs({
 const About = () => {
   return (
     <AboutWrapper>
-      <h1>About this boiiii</h1>
-      <PicCard
-        title="The early years"
-        body={
-          <div>
-            <p>this work that would be dope!</p>
-            <ul>
-              <li>This</li>
-              <li>That</li>
-            </ul>
-          </div>
-        }
-        image="images/boy-scout.JPG"
-      />
+      <h1>About this guy</h1>
       <PicCard
         title="Current and Future"
         body={

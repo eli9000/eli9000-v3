@@ -15,15 +15,6 @@ body {
   background: #7c0a02;
 }
 
-a {
-  /* display: inline-block; */
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-transition: 250ms ease;
-  -moz-transition: 250ms ease;
-  -ms-transition: 250ms ease;
-  transition: 250ms ease;
-  /* -o-transition: ease-in-out .15s;
-    -webkit-transition: ease-in-out .15s;
-  transition: ease-in-out .15s; */
+h1 {
+  font-weight: 500;
 }

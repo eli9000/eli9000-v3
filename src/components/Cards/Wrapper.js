@@ -1,7 +1,9 @@
 import React from 'react'; // eslint-disable-line
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const Wrapper = styled.div.attrs({
+  className: props => props.className || 'card-wrapper',
+})`
   display: flex;
   flex-flow: ${props => props.flex};
   justify-content: space-around;
@@ -10,7 +12,7 @@ const Wrapper = styled.div`
   margin: 0 10px 10px 10px;
   padding: 10px 10px 0px 5px;
   width: auto;
-  min-width: 375px;
+  min-width: 350px;
   border-radius: 10px;
   /* prettier-ignore */
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),

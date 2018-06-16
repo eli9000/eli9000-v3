@@ -3,8 +3,6 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import styled from 'styled-components';
 
-/* ***************************************************************** */
-
 import SkillCard from '../components/SkillCard/SkillCard';
 
 /* ***************************************************************** */
@@ -12,9 +10,11 @@ import SkillCard from '../components/SkillCard/SkillCard';
 const CodingWrapper = styled.div.attrs({
   className: 'Coding',
 })`
-  dislpay: flex;
+  display: flex;
+  flex-flow: column nowrap;
   > h1 {
     margin: 10px;
+    padding-top: 10px;
     text-align: center;
   }
 `;
@@ -46,7 +46,8 @@ const Coding = ({ data: { loading, error, skills = [] } }) => {
 
   return (
     <CodingWrapper>
-      <h1>Some code I know</h1>
+      <h1>Code Skills</h1>
+      <br />
       {skills.map(skill => <SkillCard key={skill.id} {...skill} />)}
     </CodingWrapper>
   );

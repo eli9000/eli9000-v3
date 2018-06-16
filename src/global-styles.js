@@ -15,7 +15,7 @@ injectGlobal`
 
     --black: #333333;
 
-    --font-size: 10pt;
+    --font-size: 12pt;
   }
 
   #app {
@@ -26,13 +26,12 @@ injectGlobal`
   }
 
   a {
-    color: var(--black);
-    &:hover { color: var(--primary-accent-color); }
+    cursor: pointer;
+  }
 
-    &.active {
-      color: var(--primary-color);
-      cursor: default;
-    }
+  a:link a:visited {
+    color: var(--black);
+    text-decoration: none;
   }
 
   h1 {

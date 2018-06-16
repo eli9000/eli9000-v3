@@ -10,24 +10,8 @@ import Wrapper from './Wrapper';
 const IconBox = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100px;
-`;
-
-const Container = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-`;
-
-const HeadInfo = styled.div`
-  display: flex;
-  justify-content: space-between;
   align-content: center;
-  align-items: center;
-  width: 100%;
+  width: 100px;
 `;
 
 const Title = styled.h1`
@@ -36,14 +20,12 @@ const Title = styled.h1`
   margin: 0 0 0 10px;
 `;
 
-const Body = styled.div`
-  align-self: flex-start;
-  margin: 0 0 0 10px;
-`;
-
 const CardWrapper = Wrapper.extend`
+  justify-content: flex-start;
+  align-content: center;
   &:hover {
     box-shadow: none;
+    background-color: #eee;
   }
 `;
 
@@ -51,17 +33,12 @@ const CardWrapper = Wrapper.extend`
 
 const ContactCard = ({ className, name, info, link, fa, color }) => {
   return (
-    <Link to={link}>
+    <Link to={link} target="_blank">
       <CardWrapper>
         <IconBox>
           <Icon className={fa} color={color} />
         </IconBox>
-        <Container>
-          <HeadInfo>
-            <Title>{name}</Title>
-          </HeadInfo>
-          <Body>{info}</Body>
-        </Container>
+        <Title>{name}</Title>
       </CardWrapper>
     </Link>
   );
