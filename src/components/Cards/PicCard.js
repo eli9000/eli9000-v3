@@ -10,6 +10,8 @@ const Title = styled.h1`
   margin: 10px;
 `;
 
+//TODO: You need to suck some balls @critical @30min
+
 const Content = styled.div`
   display: flex;
   flex-flow: column nowrap;

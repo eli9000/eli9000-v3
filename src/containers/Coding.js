@@ -13,9 +13,7 @@ const CodingWrapper = styled.div.attrs({
   display: flex;
   flex-flow: column nowrap;
   > h1 {
-    margin: 10px;
-    padding-top: 10px;
-    text-align: center;
+    text-shadow: 2px 2px 4px gray;
   }
 `;
 

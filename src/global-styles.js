@@ -1,11 +1,12 @@
 import { injectGlobal } from 'styled-components';
 
-/** ************************************************************************* */
+/* ***************************************************************** */
 
 injectGlobal`
   @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
   :root {
+
     --primary-color: #330000;
     --primary-accent-color: #008ac3;
 
@@ -36,5 +37,8 @@ injectGlobal`
 
   h1 {
     font-weight: 500;
+    margin: 10px;
+    padding-top: 10px;
+    text-align: center;
   }
 `;

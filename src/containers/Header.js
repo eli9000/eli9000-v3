@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+/* ***************************************************************** */
+
 const HeaderWrapper = styled.div.attrs({
   className: 'Header',
 })`
@@ -13,13 +15,16 @@ const HeaderWrapper = styled.div.attrs({
   border-bottom: 1px solid gray;
   > a {
     color: lightgrey;
+    text-decoration: none;
   }
 `;
+
+/* ***************************************************************** */
 
 export default () => {
   return (
     <HeaderWrapper>
-      <Link to="/">eli9000.com</Link>
+      <Link to="/">HOME</Link>
     </HeaderWrapper>
   );
 };

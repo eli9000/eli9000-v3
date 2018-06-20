@@ -3,7 +3,7 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import styled from 'styled-components';
 
-import ContactCard from '../components/Cards/ContactCard';
+import LinkCard from '../components/Cards/LinkCard';
 
 /* ***************************************************************** */
 
@@ -16,9 +16,7 @@ const ContactWrapper = styled.div.attrs({
   align-items: center;
   height: 100%;
   > h1 {
-    margin: 10px;
-    padding-top: 10px;
-    text-align: center;
+    text-shadow: 2px 2px 4px gray;
   }
 
   > .contacts {
@@ -61,11 +59,11 @@ const Contact = ({ data: { loading, error, contacts = [] } }) => {
 
   return (
     <ContactWrapper>
-      <h1>Contact and Social</h1>
+      <h1>Social and Code Learn Sites</h1>
       <br />
       <div className="contacts">
         {' '}
-        {contacts.map(contact => <ContactCard key={contact.id} {...contact} />)}
+        {contacts.map(contact => <LinkCard key={contact.id} {...contact} />)}
       </div>
     </ContactWrapper>
   );

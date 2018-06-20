@@ -18,6 +18,9 @@ notes.md
 
 # misc
 .DS_Store
+
+# environment vars
+.env
 .env.sh
 .env.local
 .env.development.local

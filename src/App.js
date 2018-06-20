@@ -10,14 +10,18 @@ const AppWrapper = styled.div.attrs({
 })`
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  max-width: 980px;
+  justify-content: flex-start;
+  max-width: 1024px;
   min-width: 375px;
+  min-height: 100vh;
   margin: auto;
+  padding-bottom: 20px;
   background-color: white;
   @media (min-width: 768px) {
   }
 `;
+
+/* ***************************************************************** */
 
 class App extends Component {
   render() {
@@ -26,5 +30,3 @@ class App extends Component {
 }
 
 export default App;
-
-/* ***************************************************************** */

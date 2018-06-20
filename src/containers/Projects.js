@@ -12,9 +12,7 @@ const ContactWrapper = styled.div.attrs({
   flex-flow: column;
   height: 100%;
   > h1 {
-    margin: 10px;
-    padding-top: 10px;
-    text-align: center;
+    text-shadow: 2px 2px 4px gray;
   }
 `;
 

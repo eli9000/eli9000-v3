@@ -26,12 +26,13 @@ const CardWrapper = Wrapper.extend`
   &:hover {
     box-shadow: none;
     background-color: #eee;
+    color: red;
   }
 `;
 
 /* ***************************************************************** */
 
-const ContactCard = ({ className, name, info, link, fa, color }) => {
+const LinkCard = ({ name, link, fa, color }) => {
   return (
     <Link to={link} target="_blank">
       <CardWrapper>
@@ -44,4 +45,4 @@ const ContactCard = ({ className, name, info, link, fa, color }) => {
   );
 };
 
-export default ContactCard;
+export default LinkCard;

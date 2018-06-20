@@ -12,17 +12,13 @@ const HomeWrapper = styled.div.attrs({
   align-content: center;
   height: 100%;
   > h1 {
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
     text-shadow: 2px 2px 4px gray;
   }
   > .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: var(--background-color);
+    padding-top: 10px;
 
     > .img {
       background-color: var(--background-color);
@@ -52,7 +48,7 @@ const Home = () => {
         <div className="img" />
       </div>
       <section>
-        <h1>I know it's ugly, but hear me out...</h1>
+        <h2>I know it's ugly, but hear me out...</h2>
         <hr />
         <p>
           Instead of using a component library, I decided to build my own. Not
@@ -68,9 +64,9 @@ const Home = () => {
           counts for this project.
         </p>
         <hr />
-        <h1>
+        <h2>
           The purpose of this site is to show an understanding of the following:
-        </h1>
+        </h2>
         <ul>
           <li>
             Using React on the front-end to build reusable, dynamic, and styled

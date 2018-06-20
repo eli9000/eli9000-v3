@@ -6,3 +6,5 @@ import Routes from './routes';
 
 ReactDOM.render(Routes, document.getElementById('root'));
 registerServiceWorker();
+
+//TODO: Help meeee! @1hr

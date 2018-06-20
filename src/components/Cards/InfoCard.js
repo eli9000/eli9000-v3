@@ -7,12 +7,12 @@ import Wrapper from './Wrapper';
 /* ***************************************************************** */
 
 const Title = styled.h1`
-  margin: 5px;
+  padding-top: 0;
 `;
 
 const Body = styled.div`
   text-align: left;
-  padding: 0 0 1em 10px;
+  padding-left: 10px;
   @media screen and (max-width: 700px) {
   }
 `;
