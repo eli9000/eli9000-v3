@@ -40,32 +40,23 @@ const Resume = () => {
       <h1>Resume</h1>
       <br />
       <div className="resumes">
-        {/* <img
-          src="data/ejohnson-fullstack.png"
-          alt="res"
-          width="100%"
-          height="auto"
-        /> */}
         <LinkCard
           name="View PDF"
-          link="data/ejohnson-fullstack.pdf"
+          link="/data/jejohnson-fullstack.pdf"
+          target="_top"
           fa="fas fa-file-pdf fa-4x"
           color="#333"
         />
         <LinkCard
-          name="View as image"
-          link="data/ejohnson-fullstack.png"
-          fa="fas fa-file-image fa-4x"
-          color="#333"
-        />
-        <LinkCard
           name="Download .docx"
-          link="data/ejohnson-fullstack.docx"
+          link="/data/jejohnson-fullstack.docx"
+          target="_top"
           fa="fas fa-file-alt fa-4x"
           color="#333"
         />
         <LinkCard
           name="Link to Google Docs"
+          target="_blank"
           link="https://docs.google.com/document/d/13eaJ4UZYmYovSs2khUGFWZW_cU2CndIT_ZswyOQYkw4/edit?usp=sharing"
           fa="fab fa-google-drive fa-4x"
           color="#333"
