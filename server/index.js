@@ -1,5 +1,5 @@
+import '../env';
 import express from 'express';
-import path from 'path';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
@@ -12,7 +12,7 @@ import schema from './db/postgres/handler.js';
 
 const app = express();
 
-const { NODE_ENV, API_PORT = 4000 } = process.env;
+const { API_PORT } = process.env;
 
 app.use('*', cors());
 
