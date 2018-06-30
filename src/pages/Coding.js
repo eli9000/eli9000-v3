@@ -3,7 +3,7 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import styled from 'styled-components';
 
-import SkillCard from '../components/SkillCard/SkillCard';
+import SkillCard from '../components/Cards/SkillCard/SkillCard';
 
 /* ***************************************************************** */
 

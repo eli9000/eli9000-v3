@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Icon from './Icon';
 import Rating from './Rating';
-import Wrapper from '../Cards/Wrapper';
+import Wrapper from '../../../containers/Wrapper';
 
 const IconBox = styled.div.attrs({
   className: 'fa-4x',

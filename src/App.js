@@ -17,8 +17,6 @@ const AppWrapper = styled.div.attrs({
   margin: auto;
   padding-bottom: 20px;
   background-color: white;
-  @media (min-width: 768px) {
-  }
 `;
 
 /* ***************************************************************** */
