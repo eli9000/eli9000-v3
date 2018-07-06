@@ -48,7 +48,7 @@ const NavWrapper = styled.div.attrs({
 
 /* ***************************************************************** */
 
-class Newbar extends Component {
+class Navbar extends Component {
   render() {
     return (
       <NavWrapper>
@@ -61,4 +61,4 @@ class Newbar extends Component {
   }
 }
 
-export default Newbar;
+export default Navbar;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -21,10 +21,14 @@ const HeaderWrapper = styled.div.attrs({
 
 /* ***************************************************************** */
 
-export default () => {
-  return (
-    <HeaderWrapper>
-      <Link to="/">HOME</Link>
-    </HeaderWrapper>
-  );
-};
+class Header extends Component {
+  render() {
+    return (
+      <HeaderWrapper>
+        <Link to="/">HOME</Link>
+      </HeaderWrapper>
+    );
+  }
+}
+
+export default Header;
