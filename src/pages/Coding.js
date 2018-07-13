@@ -12,9 +12,6 @@ const CodingWrapper = styled.div.attrs({
 })`
   display: flex;
   flex-flow: column nowrap;
-  > h1 {
-    text-shadow: 2px 2px 4px gray;
-  }
 `;
 
 /* ***************************************************************** */
@@ -36,7 +33,7 @@ const query = gql`
 
 const Coding = ({ data: { loading, error, skills = [] } }) => {
   if (loading) {
-    return <p>So many skills, so little time...</p>;
+    return <p>Pulling from AWS RDS datastore via GraphQL API layer...</p>;
   }
   if (error) {
     return <p>{error.message}</p>;

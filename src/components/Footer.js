@@ -9,12 +9,9 @@ const FooterWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: var(--black);
-  border-bottom: 1px solid gray;
-  > a {
-    color: lightgrey;
-    text-decoration: none;
-  }
+  background-color: var(--footer-bg);
+  width: 100%;
+  margin-top: auto;
 `;
 
 /* ***************************************************************** */
@@ -40,7 +37,7 @@ class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <p>Copyright my shit</p>
+        <p>&copy; Copyright 2017</p>
         <form onSubmit={this.handleSubmit}>
           <label>Email</label>
           <input
@@ -48,9 +45,10 @@ class Footer extends Component {
             type="email"
             value={this.state.email}
             onChange={this.handleInputChange}
+            style={{ float: 'right' }}
           />
           <br />
-          <label>Message</label>
+          <label>Message </label>
           <input
             name="message"
             type="text"
@@ -58,7 +56,7 @@ class Footer extends Component {
             onChange={this.handleInputChange}
           />
           <br />
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" disabled />
         </form>
       </FooterWrapper>
     );

@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { link } from 'fs';
 
 /* ***************************************************************** */
 
-const NavWrapper = styled.div.attrs({
-  className: 'Navbar',
-})`
+const NavWrapper = styled.div`
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background-color: darkred;
-  margin-bottom: 10px;
+  background-color: var(--footer-bg);
 
   > a {
     padding: 14px 20px;
@@ -26,9 +24,9 @@ const NavWrapper = styled.div.attrs({
       background-color: white;
       color: red;
       font-weight: bolder;
-      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
-                  0 1px 18px 0 rgba(0, 0, 0, 0.12),
-                  0 3px 5px -1px rgba(0, 0, 0, 0.3);
+      border: none;
+      box-shadow: 5px 5px 5px maroon;
+      z-index: 2;
     }
 
     > a:last-child {
@@ -52,13 +50,30 @@ class Navbar extends Component {
   render() {
     return (
       <NavWrapper>
+        <Link to="/about">ABOUT</Link>
         <Link to="/coding">CODING</Link>
-        <Link to="/projects">PROJECTS</Link>
         <Link to="/resume">RESUME</Link>
         <Link to="/contact">LINKS</Link>
       </NavWrapper>
     );
   }
 }
+
+const Navbar1 = ({ links }) => (
+  <div id="navigation" className="navigation">
+    <nav>
+      <ul>{links.map((link, index) => <li key={index}>{link.label}</li>)}</ul>
+    </nav>
+  </div>
+);
+
+Navbar1.defaultProps = {
+  links: [
+    { label: 'About', href: '/about' },
+    { label: 'Coding', href: '/coding' },
+    { label: 'Resume', href: '/resume' },
+    { label: 'Links', href: '/contact' },
+  ],
+};
 
 export default Navbar;

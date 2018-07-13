@@ -5,7 +5,7 @@ import { ApolloProvider } from 'react-apollo';
 
 // Container imports
 import App from './App';
-import { Coding, Contact, Home, Projects, Resume } from './pages';
+import { About, Coding, Contact, Home, Projects, Resume } from './pages';
 
 import { Header, Navbar } from './components';
 import Footer from './components/Footer';
@@ -28,8 +28,9 @@ const Routes = (
         <Header />
         <Navbar />
         <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
         <Route exact path="/coding" component={Coding} />
-        <Route exact path="/projects" component={Projects} />
+        {/* <Route exact path="/projects" component={Projects} /> */}
         <Route exact path="/resume" component={Resume} />
         <Route exact path="/contact" component={Contact} />
         <Footer />

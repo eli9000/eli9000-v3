@@ -8,7 +8,20 @@ const Home = () => {
   return (
     <PageWrapper>
       <Banner />
-      <h1>Welcome to eli9000.com v4.0!</h1>
+      <h1>Howzit! Welcome...</h1>
+      <h1>Built with:</h1>
+      <ul
+        style={{ textAlign: 'center', listStyleType: 'none', padding: '0px' }}
+      >
+        <li>React</li>
+        <li>Node JS</li>
+        <li>AWS Serverless</li>
+        <li>GraphQL</li>
+      </ul>
+      <p style={{ textAlign: 'center' }}>
+        Please keep in mind this is a work in progress and is being continually
+        upgraded.
+      </p>
     </PageWrapper>
   );
 };

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import Icon from './SkillCard/Icon';
-import Wrapper from '../../containers/Wrapper';
+import Wrapper from '../../containers/CardWrapper';
 
 /* ***************************************************************** */
 

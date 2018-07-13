@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Wrapper from '../../containers/Wrapper';
+import Wrapper from '../../containers/CardWrapper';
 
 /* ***************************************************************** */
 
@@ -10,16 +10,12 @@ const Title = styled.h1`
   margin: 10px;
 `;
 
-//TODO: You need to suck some balls @critical @30min
-
 const Content = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
   @media screen and (max-width: 700px) {
-    display: flex;
-    flex-flow: column nowrap;
   }
 `;
 
@@ -39,8 +35,18 @@ const Pic = styled.img`
   padding-bottom: 10px;
   border-radius: 5px;
   @media screen and (max-width: 700px) {
-    width: 100%;
+    width: 60%;
     height: auto;
+  }
+`;
+
+const PicWrapper = Wrapper.extend`
+  justify-content: space-around;
+  @media screen and (max-width: 700px) {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
   }
 `;
 
@@ -48,13 +54,13 @@ const Pic = styled.img`
 
 const PicCard = ({ title, body, image }) => {
   return (
-    <Wrapper flex="row">
+    <PicWrapper>
       <Content>
         <Title>{title}</Title>
         <Body>{body}</Body>
       </Content>
       <Pic src={image} alt="ish delt" />
-    </Wrapper>
+    </PicWrapper>
   );
 };
 

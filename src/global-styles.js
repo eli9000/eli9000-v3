@@ -21,7 +21,8 @@ injectGlobal`
     --primary-accent-color: #008ac3;
 
     --background-color: #A22522;
-    background-color: #a22522;
+
+    --footer-bg: #999;
 
     --heading: #B399A2;
 
@@ -41,8 +42,8 @@ injectGlobal`
     cursor: pointer;
   }
 
-  a:link a:visited {
-    color: var(--black);
+  a:link, a:visited {
+    color: white;
     text-decoration: none;
   }
 
@@ -57,4 +58,8 @@ injectGlobal`
   p {
     font-family: "robotoregular";
   }
+
+
+
+
 `;

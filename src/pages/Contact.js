@@ -7,17 +7,12 @@ import LinkCard from '../components/Cards/LinkCard';
 
 /* ***************************************************************** */
 
-const ContactWrapper = styled.div.attrs({
-  className: 'Contact',
-})`
+const ContactWrapper = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   height: 100%;
-  > h1 {
-    text-shadow: 2px 2px 4px gray;
-  }
 
   > .contacts {
     > a {

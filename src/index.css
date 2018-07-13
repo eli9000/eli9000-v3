@@ -44,9 +44,16 @@
   outline: none;
 }
 
+a {
+  display: inline-block;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  transition: 250ms ease;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #eee;
+  background-color: skyblue;
   font-family: 'robotoregular';
 }

@@ -12,7 +12,12 @@ const About = () => {
       <h1>About this guy</h1>
       <PicCard
         title="Current and Future"
-        body="Shit's weak"
+        body={
+          <section>
+            <p>Currently: Janitor</p>
+            <p>Future: Dev McWizzy</p>
+          </section>
+        }
         image="images/walter-incredulous.gif"
       />
     </PageWrapper>

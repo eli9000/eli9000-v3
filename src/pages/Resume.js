@@ -14,9 +14,6 @@ const ResumeWrapper = styled.div.attrs({
   align-items: center;
   height: 100%;
   overflow: scroll;
-  > h1 {
-    text-shadow: 2px 2px 4px gray;
-  }
   > .resumes {
     display: flex;
     flex-flow: column nowrap;

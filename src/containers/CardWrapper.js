@@ -1,11 +1,9 @@
 import React from 'react'; // eslint-disable-line
 import styled from 'styled-components';
 
-const Wrapper = styled.div.attrs({
-  className: props => props.className || 'card-wrapper',
-})`
+const CardWrapper = styled.div`
   display: flex;
-  flex-flow: ${props => props.flex};
+  flex-flow: ${props => props.flexFlow};
   justify-content: space-between;
   align-items: flex-start;
 
@@ -24,4 +22,4 @@ const Wrapper = styled.div.attrs({
   }
 `;
 
-export default Wrapper;
+export default CardWrapper;
