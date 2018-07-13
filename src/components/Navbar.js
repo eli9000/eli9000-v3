@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { link } from 'fs';
 
 /* ***************************************************************** */
 
@@ -52,28 +51,11 @@ class Navbar extends Component {
       <NavWrapper>
         <Link to="/about">ABOUT</Link>
         <Link to="/coding">CODING</Link>
-        <Link to="/resume">RESUME</Link>
-        <Link to="/contact">LINKS</Link>
+        <Link to="/projects">PROJECTS</Link>
+        <Link to="/links">LINKS</Link>
       </NavWrapper>
     );
   }
 }
-
-const Navbar1 = ({ links }) => (
-  <div id="navigation" className="navigation">
-    <nav>
-      <ul>{links.map((link, index) => <li key={index}>{link.label}</li>)}</ul>
-    </nav>
-  </div>
-);
-
-Navbar1.defaultProps = {
-  links: [
-    { label: 'About', href: '/about' },
-    { label: 'Coding', href: '/coding' },
-    { label: 'Resume', href: '/resume' },
-    { label: 'Links', href: '/contact' },
-  ],
-};
 
 export default Navbar;

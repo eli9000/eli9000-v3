@@ -11,6 +11,7 @@ const Title = styled.h1`
 `;
 
 const Body = styled.div`
+  align-self: center;
   text-align: left;
   padding-left: 10px;
   @media screen and (max-width: 700px) {
@@ -21,7 +22,7 @@ const Body = styled.div`
 
 const InfoCard = ({ title, body }) => {
   return (
-    <Wrapper flex="column">
+    <Wrapper>
       <Title>{title}</Title>
       <Body>{body}</Body>
     </Wrapper>

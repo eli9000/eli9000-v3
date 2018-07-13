@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Icon from './Icon';
 import Rating from './Rating';
-import Wrapper from '../../../containers/CardWrapper';
+import CardWrapper from '../../../containers/CardWrapper';
 
 const IconBox = styled.div.attrs({
   className: 'fa-4x',
@@ -41,6 +41,11 @@ const Title = styled.h1`
 const Body = styled.div`
   align-self: flex-start;
   margin-top: 5px;
+`;
+
+const Wrapper = CardWrapper.extend`
+  justify-content: center;
+  align-items: center;
 `;
 
 const SkillCard = ({ name, fa, color, rating = 0, desc }) => {

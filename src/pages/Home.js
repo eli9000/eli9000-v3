@@ -8,19 +8,24 @@ const Home = () => {
   return (
     <PageWrapper>
       <Banner />
-      <h1>Howzit! Welcome...</h1>
-      <h1>Built with:</h1>
+      <h1>Howzit!? Welcome...</h1>
+      <h1 style={{ margin: '0px', textDecoration: 'underline' }}>
+        Site built using:
+      </h1>
       <ul
         style={{ textAlign: 'center', listStyleType: 'none', padding: '0px' }}
       >
         <li>React</li>
-        <li>Node JS</li>
         <li>AWS Serverless</li>
         <li>GraphQL</li>
+        <li>Node JS (dev server)</li>
       </ul>
       <p style={{ textAlign: 'center' }}>
-        Please keep in mind this is a work in progress and is being continually
-        upgraded.
+        Please note this site is currently...
+        <br />
+        <img src="./images/uc.gif" style={{ maxWidth: '90vw' }} />
+        <br />
+        Never forget GEOCITIES!!!
       </p>
     </PageWrapper>
   );

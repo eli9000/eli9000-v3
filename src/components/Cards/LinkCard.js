@@ -21,6 +21,7 @@ const Title = styled.h1`
 `;
 
 const CardWrapper = Wrapper.extend`
+  width: 50%;
   justify-content: flex-start;
   align-content: center;
   &:hover {

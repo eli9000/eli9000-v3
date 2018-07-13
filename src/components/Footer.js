@@ -8,7 +8,7 @@ const FooterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 20px;
   background-color: var(--footer-bg);
   width: 100%;
   margin-top: auto;

@@ -10,7 +10,7 @@ const Banner = styled.div`
   background-size: cover;
   height: 300px;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.85;
 `;
 
 export default Banner;

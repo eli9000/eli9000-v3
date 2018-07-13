@@ -3,10 +3,9 @@ import styled from 'styled-components';
 
 const CardWrapper = styled.div`
   display: flex;
-  flex-flow: ${props => props.flexFlow};
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
-
   margin: 10px;
   padding: 10px;
   width: auto;

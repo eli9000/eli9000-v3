@@ -3,18 +3,16 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import styled from 'styled-components';
 
+import PageWrapper from '../containers/PageWrapper';
 import LinkCard from '../components/Cards/LinkCard';
 
 /* ***************************************************************** */
 
-const ContactWrapper = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-
-  > .contacts {
+const LinksWrapper = PageWrapper.extend`
+  > .links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     > a {
       text-decoration: none;
     }
@@ -44,7 +42,7 @@ const query = gql`
 
 /* ***************************************************************** */
 
-const Contact = ({ data: { loading, error, contacts = [] } }) => {
+const Links = ({ data: { loading, error, contacts = [] } }) => {
   if (loading) {
     return <p>Gettin that info...</p>;
   }
@@ -53,15 +51,14 @@ const Contact = ({ data: { loading, error, contacts = [] } }) => {
   }
 
   return (
-    <ContactWrapper>
-      <h1>Social and Code Learn Sites</h1>
+    <LinksWrapper>
+      <h1>Social and Code Links</h1>
       <br />
-      <div className="contacts">
-        {' '}
+      <div className="links">
         {contacts.map(contact => <LinkCard key={contact.id} {...contact} />)}
       </div>
-    </ContactWrapper>
+    </LinksWrapper>
   );
 };
 
-export default graphql(query)(Contact);
+export default graphql(query)(Links);

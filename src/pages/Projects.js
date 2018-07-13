@@ -1,24 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import PageWrapper from '../containers/PageWrapper';
 import InfoCard from '../components/Cards/InfoCard';
 
 /* ***************************************************************** */
 
-const ContactWrapper = styled.div.attrs({
-  className: 'Projects',
-})`
-  display: flex;
-  flex-flow: column;
-  height: 100%;
-  > h1 {
-    text-shadow: 2px 2px 4px gray;
-  }
-`;
-
 const Projects = () => {
   return (
-    <ContactWrapper>
+    <PageWrapper>
       <h1>What I'm Working On</h1>
       <br />
       <InfoCard
@@ -41,7 +31,7 @@ const Projects = () => {
         title="Security"
         body="A personal home security system I'm building with a Raspberry Pi and powered by Python and Aws."
       />
-    </ContactWrapper>
+    </PageWrapper>
   );
 };
 

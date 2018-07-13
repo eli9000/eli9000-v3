@@ -10,15 +10,39 @@ const About = () => {
   return (
     <PageWrapper>
       <h1>About this guy</h1>
+      <br />
+      <PicCard
+        title="Favs"
+        body={
+          <section>
+            <p>Movie: Big Lebowski</p>
+          </section>
+        }
+        image="images/walter.gif"
+      />
       <PicCard
         title="Current and Future"
         body={
           <section>
-            <p>Currently: Janitor</p>
-            <p>Future: Dev McWizzy</p>
+            <p>
+              Currently: Ex-Teacher<br />
+              Future: Dev McWizzy
+            </p>
           </section>
         }
-        image="images/walter-incredulous.gif"
+        image="images/glasses.png"
+      />
+      <PicCard
+        title="Education"
+        body={
+          <section>
+            <p>
+              University of Utah<br />
+              B.S. in Mathematics
+            </p>
+          </section>
+        }
+        image="images/utes.png"
       />
     </PageWrapper>
   );

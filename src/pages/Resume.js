@@ -38,20 +38,6 @@ const Resume = () => {
       <br />
       <div className="resumes">
         <LinkCard
-          name="View PDF"
-          link="/data/jejohnson-fullstack.pdf"
-          target="_top"
-          fa="fas fa-file-pdf fa-4x"
-          color="#333"
-        />
-        <LinkCard
-          name="Download .docx"
-          link="/data/jejohnson-fullstack.docx"
-          target="_top"
-          fa="fas fa-file-alt fa-4x"
-          color="#333"
-        />
-        <LinkCard
           name="Link to Google Docs"
           target="_blank"
           link="https://docs.google.com/document/d/13eaJ4UZYmYovSs2khUGFWZW_cU2CndIT_ZswyOQYkw4/edit?usp=sharing"

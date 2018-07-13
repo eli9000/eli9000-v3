@@ -7,7 +7,7 @@ import Wrapper from '../../containers/CardWrapper';
 /* ***************************************************************** */
 
 const Title = styled.h1`
-  margin: 10px;
+  margin: 0px;
 `;
 
 const Content = styled.div`
@@ -21,17 +21,16 @@ const Content = styled.div`
 
 const Body = styled.div`
   text-align: left;
-  padding: 10px;
   margin: 0 auto;
   @media screen and (max-width: 700px) {
     line-height: 1.5em;
-    padding: 10px;
   }
 `;
 
 const Pic = styled.img`
-  width: 40%;
-  height: 40%;
+  align-self: center;
+  max-width: 250px;
+  max-height: 250px;
   padding-bottom: 10px;
   border-radius: 5px;
   @media screen and (max-width: 700px) {
@@ -42,7 +41,7 @@ const Pic = styled.img`
 
 const PicWrapper = Wrapper.extend`
   justify-content: space-around;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 425px) {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
@@ -59,7 +58,7 @@ const PicCard = ({ title, body, image }) => {
         <Title>{title}</Title>
         <Body>{body}</Body>
       </Content>
-      <Pic src={image} alt="ish delt" />
+      <Pic src={image} alt="ish" />
     </PicWrapper>
   );
 };
