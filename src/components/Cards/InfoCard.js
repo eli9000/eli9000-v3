@@ -18,14 +18,19 @@ const Body = styled.div`
   }
 `;
 
+const InfoWrapper = Wrapper.extend`
+  display: flex;
+  justify-content: column;
+`;
+
 /* ***************************************************************** */
 
 const InfoCard = ({ title, body }) => {
   return (
-    <Wrapper>
+    <InfoWrapper>
       <Title>{title}</Title>
       <Body>{body}</Body>
-    </Wrapper>
+    </InfoWrapper>
   );
 };
 

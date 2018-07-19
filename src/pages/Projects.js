@@ -9,7 +9,7 @@ import InfoCard from '../components/Cards/InfoCard';
 const Projects = () => {
   return (
     <PageWrapper>
-      <h1>What I'm Working On</h1>
+      <h1>Projects I'm Working On</h1>
       <br />
       <InfoCard
         title="801-code"
@@ -20,12 +20,8 @@ const Projects = () => {
         body="Basement-labs project currently under development. A place where users can find deals on everyday home maintenance projects."
       />
       <InfoCard
-        title="Gokey Locksmiths"
-        body="Rebuild of an outdated Adobe Muse site. Using a custom Wordpress template to help be more responsive and to better gather data."
-      />
-      <InfoCard
         title="Devs who Shred"
-        body="Meetup idea for developers who shred the gnar gnar. Check back soon for more info!"
+        body="Meetup idea for developers who shred the gnar. Check back soon for more info!"
       />
       <InfoCard
         title="Security"

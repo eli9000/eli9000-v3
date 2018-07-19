@@ -23,7 +23,7 @@ class Header extends Component {
           <i className="fas fa-home fa-2x" />
           <code>&nbsp; Eli Johnson's Personal Website</code>
         </Link>
-        <i className="fas fa-bars fa-2x" />
+        {/* <i className="fas fa-bars fa-2x" /> */}
       </HeaderWrapper>
     );
   }

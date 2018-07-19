@@ -37,27 +37,39 @@ class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <p>&copy; Copyright 2017</p>
-        <form onSubmit={this.handleSubmit}>
-          <label>Email</label>
-          <input
-            name="email"
-            type="email"
-            value={this.state.email}
-            onChange={this.handleInputChange}
-            style={{ float: 'right' }}
-          />
-          <br />
-          <label>Message </label>
-          <input
-            name="message"
-            type="text"
-            value={this.state.message}
-            onChange={this.handleInputChange}
-          />
-          <br />
+        <p>
+          &copy; Copyright 2017... Oh who am I kidding ain't nobody copying this
+          lol
+        </p>
+        {/* <ul>
+          <li>HOME</li>
+          <li>HOME</li>
+          <li>HOME</li>
+          <li>HOME</li>
+        </ul> */}
+        {/* <form onSubmit={this.handleSubmit}>
+          <fieldset>
+            <legend>Holler at meh</legend>
+            <label for="email">Email</label>
+            <input
+              name="email"
+              type="email"
+              value={this.state.email}
+              onChange={this.handleInputChange}
+              style={{ float: 'right' }}
+            />
+            <br />
+            <label for="message">Message </label>
+            <input
+              name="message"
+              type="text"
+              value={this.state.message}
+              onChange={this.handleInputChange}
+            />
+            <br />
+          </fieldset>
           <input type="submit" value="Submit" disabled />
-        </form>
+        </form> */}
       </FooterWrapper>
     );
   }

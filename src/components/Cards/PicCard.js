@@ -8,18 +8,20 @@ import Wrapper from '../../containers/CardWrapper';
 
 const Title = styled.h1`
   margin: 0px;
+  text-align: left;
 `;
 
 const Content = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   @media screen and (max-width: 700px) {
   }
 `;
 
 const Body = styled.div`
+  flex: 2;
   text-align: left;
   margin: 0 auto;
   @media screen and (max-width: 700px) {
