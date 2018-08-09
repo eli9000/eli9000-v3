@@ -6,6 +6,14 @@ import PicCard from '../components/Cards/PicCard';
 
 /* ***************************************************************** */
 
+/* ______TODO______
+  1. Add the following:
+    Movies I Love
+    People I Admire
+    Things I Study
+    Book/Podcasts I Read
+*/
+
 const About = () => {
   return (
     <PageWrapper>

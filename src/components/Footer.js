@@ -37,10 +37,7 @@ class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <p>
-          &copy; Copyright 2017... Oh who am I kidding ain't nobody copying this
-          lol
-        </p>
+        <p>&copy; Copyright 2018</p>
         {/* <ul>
           <li>HOME</li>
           <li>HOME</li>

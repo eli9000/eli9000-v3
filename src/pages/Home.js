@@ -22,11 +22,11 @@ const Home = () => {
         </div>
       </Banner>
       <h1>
-        Welcome to my GeoCities throwback page!<br />
+        Welcome! Please bear with me...<br />
         <img src="./images/uc.gif" style={{ maxWidth: '50%' }} />
       </h1>
       <h2 style={{ textAlign: 'center', margin: '0px' }}>
-        This site was built using:
+        Built from scratch using:
       </h2>
       <ul
         style={{ textAlign: 'center', listStyleType: 'none', padding: '0px' }}
@@ -46,10 +46,9 @@ const Home = () => {
       >
         <em>Side note: </em>No component library was used as I wanted to further
         my understanding of modular coding, styled-components, code-splitting,
-        conditional rendering, etc. Still got a few kinks to work out and I may
-        end up importing and using a component library at some point. But until
-        then I am continually making improvements and learning new stuff
-        everyday!
+        conditional rendering, etc. I may end up importing and using a component
+        library at some point. But until then I am continually making
+        improvements and learning new stuff everyday!
       </p>
     </PageWrapper>
   );

@@ -21,7 +21,7 @@ class Header extends Component {
       <HeaderWrapper>
         <Link to="/">
           <i className="fas fa-home fa-2x" />
-          <code>&nbsp; Eli Johnson's Personal Website</code>
+          <code>&nbsp; eli9000.com</code>
         </Link>
         {/* <i className="fas fa-bars fa-2x" /> */}
       </HeaderWrapper>

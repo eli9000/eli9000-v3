@@ -7,20 +7,20 @@ import Wrapper from '../../containers/CardWrapper';
 /* ***************************************************************** */
 
 const Title = styled.h1`
+  margin-top: 0;
   padding-top: 0;
 `;
 
 const Body = styled.div`
-  align-self: center;
-  text-align: left;
-  padding-left: 10px;
+  align-self: flex-start;
+  padding: 0 10px;
   @media screen and (max-width: 700px) {
   }
 `;
 
 const InfoWrapper = Wrapper.extend`
   display: flex;
-  justify-content: column;
+  flex-flow: column nowrap;
 `;
 
 /* ***************************************************************** */
@@ -29,7 +29,10 @@ const InfoCard = ({ title, body }) => {
   return (
     <InfoWrapper>
       <Title>{title}</Title>
-      <Body>{body}</Body>
+      <Body>
+        <i className="fas fa-arrow-alt-circle-right" />&nbsp;
+        {body}
+      </Body>
     </InfoWrapper>
   );
 };

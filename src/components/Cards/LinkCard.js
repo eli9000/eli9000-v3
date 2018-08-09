@@ -33,9 +33,9 @@ const CardWrapper = Wrapper.extend`
 
 /* ***************************************************************** */
 
-const LinkCard = ({ name, link, fa, color, target }) => {
+const LinkCard = ({ name, link, fa, color }) => {
   return (
-    <Link to={link} target={target}>
+    <Link to={link} target="_self">
       <CardWrapper>
         <IconBox>
           <Icon className={fa} color={color} />
