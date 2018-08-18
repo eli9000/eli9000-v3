@@ -1,4 +1,4 @@
-import '../env';
+import '../env.js';
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
@@ -8,7 +8,7 @@ import { blue, yellow } from 'chalk';
 import db from './db';
 import schema from './db/postgres/handler.js';
 
-// import twitter from './api/twitter';
+import twitter from './api/twitter';
 
 const app = express();
 

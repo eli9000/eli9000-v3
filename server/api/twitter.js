@@ -1,11 +1,12 @@
 import Twitter from 'twitter';
+// import { timeout } from '../../node_modules/@types/async';
 
 const {
   TWITTER_CONSUMER_KEY,
   TWITTER_CONSUMER_SECRET,
   TWITTER_ACCESS_TOKEN_KEY,
   TWITTER_ACCESS_TOKEN_SECRET,
-} = process.env
+} = process.env;
 
 const client = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -21,10 +22,28 @@ const client = new Twitter({
 //   console.log(tweets);  // Tweet body
 //   console.log(response);
 // });
+let tweetTotal = 0;
 
-client.stream('statuses/filter', {track: 'livepd'},  function(stream) {
+let tweetSet = [];
+
+setInterval(() => {
+  console.log(tweetSet);
+}, 10000);
+
+client.stream('statuses/filter', { track: 'livepd' }, function(stream) {
   stream.on('data', function(tweet) {
-    console.log(tweet.text);
+    let user = {
+      id: tweet.id,
+      name: tweet.user.name,
+      desc: tweet.user.description,
+      date: tweet.created_at,
+      text: tweet.text,
+    };
+
+    tweetSet.push({ user });
+    tweetTotal++;
+    console.log(`The total tweet count is ${tweetSet.length}.`);
+    // console.log({ ...tweet });
   });
 
   stream.on('error', function(error) {

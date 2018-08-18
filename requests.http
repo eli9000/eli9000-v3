@@ -1,0 +1,6 @@
+# Testing out CRUD requests
+
+# GET https://twitter.com/_eli9000
+
+# Using access token to get recent Instagram submits...
+GET https://api.instagram.com/v1/users/self/media/recent/?access_token=144247590.681c62d.83d7d938ef5e4953bb2687eda0351c73
